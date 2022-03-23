@@ -88,3 +88,19 @@ head results/백수왕\ 고라이온.txt
 검정, 빨강, 녹색, 파랑, 노랑 5색빛 사자들을 조종하면서 이들은 아르티나를 위기에서 구하기 위해 카르타 제국과 맞서 싸우게 된다.
 아미우 공주(로멜 공주)
 ```
+
+## 6. 외부 파일을 이용해 한번에 토픽+키워드 수집
+구글 스프레드시트에 다음과 같은 형태로 토픽별 키워드를 수집한 다음 .csv 파일로 저장한다. 
+```
+    토픽 | 키워드1, 키워드2, ..., 키워드N
+    토픽2| 키워드1, 키워드2, ..., 키워드N 
+    ...
+```
+
+다음 코드를 통해 한번에 키워드를 수집하고 키워드별 문장 수를 파악한다. 
+```bash
+python3 utils/dump_with_keywords.py \ 
+    --topic_dir {topic_file dir} \
+    --result_dir {data dump dir} \
+    --output_dir {file with sents per keyword} 
+```
