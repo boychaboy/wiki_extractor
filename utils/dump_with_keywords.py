@@ -41,6 +41,7 @@ def count_sents(RESULT_DIR, OUTPUT_DIR):
             lines = open(file).readlines()
             fw.write(f"{str(file).replace(RESULT_DIR, '')}: {len(lines)}\n")
             line_total += len(lines)
+        fw.write(f"Total sentence length : {line_total}\n\n")
     print(f"Number of documents saved in {OUTPUT_DIR}")
     return
 
