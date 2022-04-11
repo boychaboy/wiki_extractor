@@ -5,7 +5,7 @@
 ## 1. Install
 깃을 통해 설치를 진행합니다.
 ```bash
-git clone https://github.com/Aiden-Jeon/wiki_extractor.git
+git clone https://github.com/boychaboy/wiki_extractor.git
 cd wiki_extractor
 pip install -e .
 ```
